@@ -507,5 +507,5 @@ parameter  xmin  0.0
 parameter  xmax  0.00126
 runpython "customcurve.py"  &npt &pa &pb &pc &xmin &xmax
 ```
-More examples see [PythonExamples]()
+More examples see [PythonExamples](https://github.com/LS-PrePost/Release/tree/master/Release4.8/python_examples/)
 
