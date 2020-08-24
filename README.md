@@ -1,7 +1,7 @@
 # LS-PrePost
-[Website]()
+[Website](https://ftp.lstc.com/anonymous/outgoing/lsprepost/)
 
-[Documentation]()
+[Documentation](https://github.com/LS-PrePost/Release)
 
 
 
