@@ -5,7 +5,7 @@
 
 
 
-![Alt text](https://github.com/LS-PrePost/Release/raw/master/pictures/p1.jpg)
+<img src="./pictures/p1.jpg" alt="Alt text" style="zoom:50%;" />
 
 
 
