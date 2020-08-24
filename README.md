@@ -5,7 +5,7 @@
 
 
 
-<img src="D:\LSPrePostReleasePicture\p1.png" alt="Alt text" style="zoom:50%;" />
+<img src="./picture/p1.png" alt="Alt text" style="zoom:50%;" />
 
 
 
