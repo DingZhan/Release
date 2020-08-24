@@ -14,11 +14,11 @@
 
 1. Open the “Multiphysics Solution” interface by checking on the “Solution Explorer” item under the “View” menu.
 
-![Alt text](./pictures/ms_open01.png)
+   <img src="./pictures/ms_open01.png" alt="Alt text" style="zoom:67%;" />
 
 2. Pop up the solution explorer file operation menus by right clicking on the top tree item in the solution explorer.
 
-   ![Alt text](./pictures/ms_open02.png)
+   <img src="./pictures/ms_open02.png" alt="Alt text" style="zoom:67%;" />
 
    * *“New Solution” can create a new solution file.*
 
@@ -68,7 +68,7 @@
 
 2. The solution data contains two parts, one is the tree node in the tree structure and the other one is called property gird which is attached to the corresponding tree node. User can select different tree nodes and set their related property data in the property gird.
 
-<img src="./pictures/ms_solution02.png" alt="Alt text" style="zoom:50%;" />
+   <img src="./pictures/ms_solution02.png" alt="Alt text" style="zoom:50%;" />
 
 
 
@@ -76,7 +76,7 @@
 
 1. For “Mechanical” and “Thermal” case types, the whole tree structure both contains three parts:Analysis, Model,Output. It can be built like the following picture.
 
-<img src="./pictures/ms_mechanical01.png" alt="Alt text" style="zoom:50%;" />
+   <img src="./pictures/ms_mechanical01.png" alt="Alt text" style="zoom: 50%;" />
 
 2. In the “Analysis” item user can set the solver data, time step data, and integration data. For “Mechanical”, the solution only support the “Nonlinear Implicit” solver for now. If user select the “Mechanical” and “Thermal” case type, the tree data under the “Analysis” item is like what the picture shows.
 
@@ -86,7 +86,7 @@
 
    * *The material property in part item is defined by a new material library. In LS-Prepost executable folder, LS-Prepost add a sample material database file called “material.xml”. It is in XML and keyword format. Users can add their own material databases as the LS-Prepost “built-in” database format. The thermal material data will be shown when the thermal analysis exists in the solution tree structure.*
 
-     ![Alt text](./pictures/ms_mechanical02.png)
+     <img src="./pictures/ms_mechanical02.png" alt="Alt text" style="zoom:50%;" />
 
    * *Contact item only support “Sliding Contact”, “Tied Contact” and “Transducer” three types for now. The data for thermal analysis is in every contact item property gird.*
 
@@ -94,9 +94,9 @@
 
 5. For now, the post analysis is added into the property grid for part items and contact items. And user can switch the item property between “pre” and “post” button. If users change any “pre” data, they need to rerun the current case to update the post data. When users choose to rerun the case, the case data after the selected one will be updated too.
 
-   ![Alt text](./pictures/ms_mechanical03.png)
+   <img src="./pictures/ms_mechanical03.png" alt="Alt text" style="zoom: 33%;" />
 
-   ![Alt text](./pictures/ms_mechanical04.png)
+   <img src="./pictures/ms_mechanical04.png" alt="Alt text" style="zoom:80%;" />
 
    
 
@@ -136,12 +136,12 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 
 1. Define Set Data: clicking the first button will list all defined set data in current model and clicking the second button will confirm what data users have selected on the model.
 
-   * *Node Set:* <img src="./pictures/ms_property01.png" alt="Alt text" style="zoom:67%;" />
-   * *Part Set:* <img src="./pictures/ms_property02.png" alt="Alt text" style="zoom:67%;" />
+   * *Node Set:* <img src="./pictures/ms_property01.png" alt="Alt text" style="zoom: 50%;" />
+   * *Part Set:* <img src="./pictures/ms_property02.png" alt="Alt text" style="zoom: 50%;" />
 
-   * *Shell Element Set:* <img src="./pictures/ms_property03.png" alt="Alt text" style="zoom:67%;" />
+   * *Shell Element Set:* <img src="./pictures/ms_property03.png" alt="Alt text" style="zoom: 50%;" />
 
-   * *Segment Set:* <img src="./pictures/ms_property04.png" alt="Alt text" style="zoom:67%;" />
+   * *Segment Set:* <img src="./pictures/ms_property04.png" alt="Alt text" style="zoom: 50%;" />
 
 2. Define Local Coordinate System: clicking the first button will list all the defined local coordinate system in current model and clicking the second button will pop up the “Define Local Coordinate System” interface. 
 
@@ -167,7 +167,7 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 
    <img src="./pictures/ms_property11.png" alt="Alt text" style="zoom:60%;" />
    
-   <img src="./pictures/ms_property12.png" alt="Alt text" style="zoom:60%;" />
+   <img src="./pictures/ms_property12.png" alt="Alt text" style="zoom: 80%;" />
 
 
 
