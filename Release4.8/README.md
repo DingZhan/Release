@@ -77,7 +77,7 @@
 
    <img src="pictures/keyword_feature02.png" alt="Alt text" style="zoom:60%;" />
 
-3. support popup keyword form when right click on the cell of SortBy dialog
+3. support "Cancel" reading the model when included file is not found
 
 4. support create *INITIAL_VELOCITY in EntCreation dialog
 
