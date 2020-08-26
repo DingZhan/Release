@@ -269,18 +269,6 @@ support Penta element.
 
 
 
-### S-ALE 
-
-S-ALE data is much smaller the old type, LS-Prepost 4.8 fully support to read it, unpackage it, render, pick, and transparency.
-
-<img src="pictures/sale01.png" alt="Alt text" style="zoom:75%;" />
-
-<img src="pictures/sale02.png" alt="Alt text" style="zoom:75%;" />
-
-<img src="pictures/sale03.png" alt="Alt text" style="zoom:61%;" />
-
-
-
 
 
 
@@ -524,6 +512,18 @@ Implement:this application can be activated from “LS-PrePost” -> “Main men
 ### Split Window
 
 <img src="pictures/split_window.png" alt="Alt text" style="zoom:61%;" />
+
+
+
+### S-ALE 
+
+S-ALE data is much smaller the old type, LS-Prepost 4.8 fully support to read it, unpackage it, render, pick, and transparency.
+
+<img src="pictures/sale01.png" alt="Alt text" style="zoom:75%;" />
+
+<img src="pictures/sale02.png" alt="Alt text" style="zoom:75%;" />
+
+<img src="pictures/sale03.png" alt="Alt text" style="zoom:61%;" />
 
 
 
