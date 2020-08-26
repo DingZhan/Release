@@ -57,53 +57,13 @@
 * EM_RANDLES_TSHELL(updated)
 * EM_RANDLES_TSHELL(update)
 
-
-
-### Feature improve
+### Keyword Reading
 
 1. speed up of reading keyword file by improve the process of remove space characters of each line.
 2. speed up the process of include transform, especially for model which has too many *include_transform subsystems.
 3. speed up the process of pre-comment.
 
-
-
-### New features
-
-1. support multiply ids in "Keyin" of entity selection panel
-
-   <img src="pictures/keyword_feature01.png" alt="Alt text" style="zoom:60%;" />
-
-2. support popup keyword form when right click on the cell of SortBy dialog
-
-   <img src="pictures/keyword_feature02.png" alt="Alt text" style="zoom:60%;" />
-
-3. support "Cancel" reading the model when included file is not found
-
-4. support create *INITIAL_VELOCITY in EntCreation dialog
-
-   <img src="pictures/keyword_feature03.png" alt="Alt text" style="zoom:60%;" />
-
-5. Identify dialog: support pop-up keyword form of selected Entity(node/element/part)
-
-   <img src="pictures/keyword_feature04.png" alt="Alt text" style="zoom:60%;" />
-
-6. support "PLOT" of *DEFINE_CURVE_DUPLICATE.
-
-   <img src="pictures/keyword_feature05.png" alt="Alt text" style="zoom:60%;" />
-
-7. right menu of *DEFINE_CURVE to load curve from xydata file, “Load Curve” will load curve data from file and create *DEFINE_CURVE, “Load curve to table” will also use these curve ids to create *DEFINE_TABLE.
-
-   <img src="pictures/keyword_feature06.png" alt="Alt text" style="zoom:60%;" />
-
-8. support "Diff Parts" on model compare dialog, compare the selected two models and find out parts that are different or only exist in one model, then highlight these parts and set others as transparent.
-
-   <img src="pictures/keyword_feature07.png" alt="Alt text" style="zoom:33%;" />
-
 ---
-
-
-
-
 
 
 
@@ -163,11 +123,49 @@ More examples see [PythonExamples](https://github.com/LS-PrePost/Release/tree/ma
 
 
 
-
-
-
-
 ## General Preprocessing
+
+### Entity Display
+
+support multiply ids in "Keyin" of entity selection panel
+
+<img src="pictures/keyword_feature01.png" alt="Alt text" style="zoom:60%;" />
+
+### Part SortBy
+
+support popup keyword form when right click on the cell of SortBy dialog
+
+<img src="pictures/keyword_feature02.png" alt="Alt text" style="zoom:60%;" />
+
+### Entity Creation
+
+support create *INITIAL_VELOCITY in EntCreation dialog
+
+<img src="pictures/keyword_feature03.png" alt="Alt text" style="zoom:60%;" />
+
+### Identify dialog: 
+
+support pop-up keyword form of selected Entity(node/element/part)
+
+<img src="pictures/keyword_feature04.png" alt="Alt text" style="zoom:60%;" />
+
+Keyword Input Form
+
+### support "PLOT" of *DEFINE_CURVE_DUPLICATE.
+
+<img src="pictures/keyword_feature05.png" alt="Alt text" style="zoom:60%;" />
+
+### Keyword Manager
+
+right menu of *DEFINE_CURVE to load curve from xydata file, “Load Curve” will load curve data from file and create *DEFINE_CURVE, “Load curve to table” will also use these curve ids to create *DEFINE_TABLE.
+
+<img src="pictures/keyword_feature06.png" alt="Alt text" style="zoom:60%;" />
+
+### Model Compare
+
+support "Diff Parts" on model compare dialog, compare the selected two models and find out parts that are different or only exist in one model, then highlight these parts and set others as transparent.
+
+<img src="pictures/keyword_feature07.png" alt="Alt text" style="zoom:33%;" />
 
 ### Shell splitting
 
@@ -266,8 +264,6 @@ support Penta element.
    Given a geometry solid shape, it construct a structure hex mesh on 3D grids’ region.
 
    <img src="pictures/element_generation10.png" alt="Alt text" style="zoom:75%;" />
-
-
 
 
 
@@ -448,7 +444,16 @@ Implement:this application can be activated from “LS-PrePost” -> “Main men
 
 2. Tet10 render for fast render.
 
-   
+
+### S-ALE 
+
+S-ALE data is much smaller the old type, LS-Prepost 4.8 fully support to read it, unpackage it, render, pick, and transparency.
+
+<img src="pictures/sale01.png" alt="Alt text" style="zoom:75%;" />
+
+<img src="pictures/sale02.png" alt="Alt text" style="zoom:75%;" />
+
+<img src="pictures/sale03.png" alt="Alt text" style="zoom:61%;" />
 
 ### MS-Post
 
@@ -515,20 +520,6 @@ Implement:this application can be activated from “LS-PrePost” -> “Main men
 
 
 
-### S-ALE 
-
-S-ALE data is much smaller the old type, LS-Prepost 4.8 fully support to read it, unpackage it, render, pick, and transparency.
-
-<img src="pictures/sale01.png" alt="Alt text" style="zoom:75%;" />
-
-<img src="pictures/sale02.png" alt="Alt text" style="zoom:75%;" />
-
-<img src="pictures/sale03.png" alt="Alt text" style="zoom:61%;" />
-
-
-
-
-
 
 
 ## General
@@ -586,10 +577,6 @@ Show Deleted Element Only and No Coord. Update.
 ### Section Plane
 
 overall support for clip mode with beam, sph and deletion data.
-
-
-
-
 
 
 
@@ -803,8 +790,6 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 
 
 
-
-
 ## ASCII and Binout
 
 ### ASCII
@@ -863,10 +848,6 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 
 
 
-
-
-
-
 ## Femzip
 
 1.  improve the efficient problem of loading the first state to draw model.
@@ -879,17 +860,11 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 
 
 
-
-
-
-
 ## File Reading and Writing
 
 1. Optimize STL writer module for large model.
 2. Support loading batch of STL files.
 3. Apply multi-thread tessellation during reading IGA pre model.
-
-
 
 
 
