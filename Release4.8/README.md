@@ -87,7 +87,7 @@
 
    <img src="pictures/keyword_feature04.png" alt="Alt text" style="zoom:60%;" />
 
-6. Identify dialog: support pop-up keyword form of selected Entity(node/element/part)
+6. support "PLOT" of *DEFINE_CURVE_DUPLICATE.
 
    <img src="pictures/keyword_feature05.png" alt="Alt text" style="zoom:60%;" />
 
