@@ -61,9 +61,9 @@
 
 ### Feature improve
 
-1. speed up of reading keyword file by improve the process of remove space characters of each line;
-2. speed up of reading keyword file by improve the process of remove space characters of each line;
-3. speed up of reading keyword file by improve the process of remove space characters of each line;
+1. speed up of reading keyword file by improve the process of remove space characters of each line.
+2. speed up the process of include transform, especially for model which has too many *include_transform subsystems.
+3. speed up the process of pre-comment.
 
 
 
