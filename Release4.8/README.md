@@ -8,6 +8,34 @@
 
 
 
+## Geometry
+
+1. Curve-Sketch
+
+   Modify Ellipse editor in Curve-Sketch.
+
+2. B-Spline Curve
+
+   Draw aux projecting lines in B-Spline Curve->Respace Para.
+
+<img src="pictures/bspline.png" alt="Alt text" style="zoom:75%;" />
+
+3. Converting Ref-Coordinate System to keyword coordinate system in Feature Tree.
+
+   <img src="pictures/convert_coord.png" alt="Alt text" style="zoom:75%;" />
+
+4. Add “Standard”, “End Point Constraint” and “Mixed” three algorithm options into Shape Offset->Edge on Face.
+
+5. Add Angle by 3 Points measure in Geometry Measure.
+
+6. Add “Sweep Mode” in Curve->Middle Curve->Axis of Pipe to extract axis from FEM parts using sweeping algorithm.
+
+
+
+
+
+
+
 
 ## New keywords and improvement
 
@@ -67,59 +95,7 @@
 
 
 
-## Scripting Command Language and Python Language
 
-### Scripting Command Language
-
-1. support for the "scalar" component name to get the node scalar and element scalar results.
-2. support for element deletion.
-3. update scl samples of control macro with file.
-4. fix int array bugs to deep copy the int array results.
-5. Save result node id of the command "ident xyzpt" to get ready for SCLCmdResultGetValue in SCL.
-6. fix bug of xyplot related functions when no model loaded.
-7. retrieve selected parts and nodes from genselect.
-
-More examples see [SCLExamples](https://ftp.lstc.com/anonymous/outgoing/lsprepost/SCLexamples/SCL_Examples.zip)
-
-
-
-### Python Language
-
-At the moment, the Python language is also used as the scripting language of LS-PrePost. The user can use Python scripting in LS-PrePost. The Python modules that LS-PrePost provides include "DataCenter" and "LsPrePost", more details see [lsppscripting.pdf](https://ftp.lstc.com/anonymous/outgoing/lsprepost/SCLexamples/lsppscripting.pdf)
-
-**How to use Python Scripting in LS-PrePost**
-
-Firstly the user should set own Python home path(LS-PrePost4.8 only supports Python36) by using LS-PrePost command:
-
-`setpythonhome "python/home/path"(like D:\Python36)`
-
-<img src="pictures/python_01.png" alt="Alt text" style="zoom:75%;" />
-
-The Python home path will be automatically saved to the config file.
-
-And then run Python scripting with the regular LS-PrePost command, or within the command file, use the runpython command to execute the Python scripting, parameters can also be passed to the script.
-
-The syntax:
-
-`runpython "pythonscriptingname" optional parameters`
-
-<img src="pictures/python_02.png" alt="Alt text" style="zoom:75%;" />
-
-Example: the following command file will execute the script that creates a X-Y curve with the parameters defined in the command file.
-
-```
-parameter  pa 9.0E+07
-parameter  pb 7000.0
-parameter  pc  4.0E+07
-parameter  npt  300
-parameter  xmin  0.0
-parameter  xmax  0.00126
-runpython "customcurve.py"  &npt &pa &pb &pc &xmin &xmax
-```
-
-More examples see [PythonExamples](https://github.com/LS-PrePost/Release/tree/master/Release4.8/python_examples/)
-
----
 
 
 
@@ -127,7 +103,7 @@ More examples see [PythonExamples](https://github.com/LS-PrePost/Release/tree/ma
 
 ### Entity Display
 
-support multiply ids in "Keyin" of entity selection panel
+support multiple ids in "Keyin" of entity selection panel
 
 <img src="pictures/keyword_feature01.png" alt="Alt text" style="zoom:60%;" />
 
@@ -269,6 +245,8 @@ support Penta element.
 
 
 
+
+
 ## General Post-processing
 
 ### Vector Plot
@@ -349,13 +327,11 @@ Measure->Area->Nd
 
 4. support for the legend on XYPlot dialog and fix plotting csv file bug.
 
-5. [Bug 16213] New: Problem with x-axis label when saving FLD curve.
+5. fix bug of loading the empty csv file.
 
-6. fix bug of loading the empty csv file.
+6. Fix the filter problem when GUI operated and send command results are different.
 
-7. Fix the filter problem when GUI operated and send command results are different.
-
-8. improve the efficient problem of drawing all of curves in file.
+7. improve the efficient problem of drawing all of curves in file.
 
 ---
 
@@ -522,6 +498,8 @@ S-ALE data is much smaller the old type, LS-Prepost 4.8 fully support to read it
 
 
 
+
+
 ## General
 
 ### Sort by Size/Extend
@@ -578,27 +556,71 @@ Show Deleted Element Only and No Coord. Update.
 
 overall support for clip mode with beam, sph and deletion data.
 
+---
 
 
-## Geometry
 
-1. Curve-Sketch
 
-   Modify Ellipse editor in Curve-Sketch.
 
-2. B-Spline Curve
 
-   Draw aux projecting lines in B-Spline Curve->Respace Para.
 
-<img src="pictures/bspline.png" alt="Alt text" style="zoom:75%;" />
+## Scripting Command Language and Python Language
 
-3. Converting Ref-Coordinate System to keyword coordinate system in Feature Tree.
+### Scripting Command Language
 
-   <img src="pictures/convert_coord.png" alt="Alt text" style="zoom:75%;" />
+1. support for the "scalar" component name to get the node scalar and element scalar results.
+2. support for element deletion.
+3. update scl samples of control macro with file.
+4. fix int array bugs to deep copy the int array results.
+5. Save result node id of the command "ident xyzpt" to get ready for SCLCmdResultGetValue in SCL.
+6. fix bug of xyplot related functions when no model loaded.
+7. retrieve selected parts and nodes from genselect.
 
-4. Add “Standard”, “End Point Constraint” and “Mixed” three algorithm options into Shape Offset->Edge on Face.
-5. Add Angle by 3 Points measure in Geometry Measure.
-6. Add “Sweep Mode” in Curve->Middle Curve->Axis of Pipe to extract axis from FEM parts using sweeping algorithm.
+More examples see [SCLExamples](https://ftp.lstc.com/anonymous/outgoing/lsprepost/SCLexamples/SCL_Examples.zip)
+
+
+
+### Python Language
+
+At the moment, the Python language is also used as the scripting language of LS-PrePost. The user can use Python scripting in LS-PrePost. The Python modules that LS-PrePost provides include "DataCenter" and "LsPrePost", more details see [lsppscripting.pdf](https://ftp.lstc.com/anonymous/outgoing/lsprepost/SCLexamples/lsppscripting.pdf)
+
+**How to use Python Scripting in LS-PrePost**
+
+Firstly the user should set own Python home path(LS-PrePost4.8 only supports Python36) by using LS-PrePost command:
+
+`setpythonhome "python/home/path"(like D:\Python36)`
+
+<img src="pictures/python_01.png" alt="Alt text" style="zoom:75%;" />
+
+The Python home path will be automatically saved to the config file.
+
+And then run Python scripting with the regular LS-PrePost command, or within the command file, use the runpython command to execute the Python scripting, parameters can also be passed to the script.
+
+The syntax:
+
+`runpython "pythonscriptingname" optional parameters`
+
+<img src="pictures/python_02.png" alt="Alt text" style="zoom:75%;" />
+
+Example: the following command file will execute the script that creates a X-Y curve with the parameters defined in the command file.
+
+```
+parameter  pa 9.0E+07
+parameter  pb 7000.0
+parameter  pc  4.0E+07
+parameter  npt  300
+parameter  xmin  0.0
+parameter  xmax  0.00126
+runpython "customcurve.py"  &npt &pa &pb &pc &xmin &xmax
+```
+
+More examples see [PythonExamples](https://github.com/LS-PrePost/Release/tree/master/Release4.8/python_examples/)
+
+---
+
+
+
+
 
 
 
@@ -854,7 +876,6 @@ Solution explorer defines some properties which will call the LS-Prepost other p
 2.  fix problem of loading model and fringe.
 3. fix crash of setting the SPH surface.
 4.  support progress bar in reading file.
-5.  support progress bar in reading file.
 
 ---
 
